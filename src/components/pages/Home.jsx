@@ -1,10 +1,9 @@
-import { lazy, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getTrendingMovies } from 'services/api';
 import { WrapperStyled } from 'components/Shared/Wrapper.styled';
 import { SectionStyled } from 'components/Shared/Section.styled';
 import { Loader } from 'components/Loader/Loader';
-
-const MoviesList = lazy(() => import('components/MoviesList/MoviesList'));
+import MoviesList from 'components/MoviesList/MoviesList';
 
 export default function Home() {
   const [movies, setMovies] = useState([]);

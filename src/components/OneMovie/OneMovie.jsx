@@ -1,6 +1,6 @@
 import { MovieImgStyled } from 'components/Shared/Wrapper.styled';
-import img from '../img/defaultImg.jpg';
 import { MovieTitleStyled, OneMovieDiv } from './OneMovie.styled';
+import img from '../img/defaultImg.jpg';
 
 export default function OneMovie({ movie }) {
   const { poster_path, title, overview } = movie;
