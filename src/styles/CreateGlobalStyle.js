@@ -44,4 +44,7 @@ img {
   height: auto;
 }
 
+body{
+  background-color: #191818;
+}
 `;
