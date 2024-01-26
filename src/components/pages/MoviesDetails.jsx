@@ -1,12 +1,12 @@
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 
-import { SectionStyled } from 'components/Shared/Section.styled';
-import { WrapperStyled } from 'components/Shared/Wrapper.styled';
+import { SectionStyled } from 'components/Shared/Section/Section.styled';
+import { WrapperStyled } from 'components/Shared/Wrapper/Wrapper.styled';
 import { getMovieByID } from 'services/api';
 import { Loader } from 'components/Loader/Loader';
 import OneMovie from 'components/OneMovie/OneMovie';
-import { LinkStyled } from 'components/Shared/SharedLayout.styled';
+import { LinkStyled } from 'components/Shared/SharedLayout/SharedLayout.styled';
 
 export default function MoviesDetails() {
   const [movie, setMovie] = useState([]);

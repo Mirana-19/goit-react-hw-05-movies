@@ -1,4 +1,4 @@
-import { MovieImgStyled } from 'components/Shared/Wrapper.styled';
+import { MovieImgStyled } from 'components/Shared/Wrapper/Wrapper.styled';
 import { MovieTitleStyled, OneMovieDiv } from './OneMovie.styled';
 import img from '../img/defaultImg.jpg';
 

@@ -2,8 +2,8 @@ import { useSearchParams } from 'react-router-dom';
 import { lazy, useEffect, useState } from 'react';
 import { getMoviesByName } from 'services/api';
 
-import { SectionStyled } from 'components/Shared/Section.styled';
-import { WrapperStyled } from 'components/Shared/Wrapper.styled';
+import { SectionStyled } from 'components/Shared/Section/Section.styled';
+import { WrapperStyled } from 'components/Shared/Wrapper/Wrapper.styled';
 import { Loader } from 'components/Loader/Loader';
 
 const MoviesList = lazy(() => import('components/MoviesList/MoviesList'));

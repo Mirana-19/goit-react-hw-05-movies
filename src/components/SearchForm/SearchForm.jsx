@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { InputStyled, SearchFormStyled } from './SearchForm.styled';
-import { LinkStyled } from 'components/Shared/SharedLayout.styled';
+import { LinkStyled } from 'components/Shared/SharedLayout/SharedLayout.styled';
 
 export default function SearchForm({ onFormSubmit }) {
   const [query, setQuery] = useState('');

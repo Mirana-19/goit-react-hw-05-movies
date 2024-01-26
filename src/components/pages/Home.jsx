@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getTrendingMovies } from 'services/api';
-import { WrapperStyled } from 'components/Shared/Wrapper.styled';
-import { SectionStyled } from 'components/Shared/Section.styled';
+import { WrapperStyled } from 'components/Shared/Wrapper/Wrapper.styled';
+import { SectionStyled } from 'components/Shared/Section/Section.styled';
 import { Loader } from 'components/Loader/Loader';
 import MoviesList from 'components/MoviesList/MoviesList';
 
