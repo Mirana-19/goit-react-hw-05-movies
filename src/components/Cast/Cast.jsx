@@ -18,7 +18,7 @@ export default function Cast() {
 
   return (
     <CastStyled>
-      {cast.length &&
+      {cast.length ? (
         cast.map(({ character, name, profile_path }) => (
           <CastItemStyled key={name}>
             <CastImg
@@ -28,8 +28,10 @@ export default function Cast() {
             <h3>{name}</h3>
             <p>Character: {character}</p>
           </CastItemStyled>
-        ))}
-      {!cast.length && <p>Sorry, there is no information about the cast.</p>}
+        ))
+      ) : (
+        <p>Sorry, there is no information about the cast.</p>
+      )}
     </CastStyled>
   );
 }
