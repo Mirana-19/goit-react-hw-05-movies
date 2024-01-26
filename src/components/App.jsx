@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 
 const Home = lazy(() => import('./pages/Home'));
@@ -22,7 +22,7 @@ export const App = () => {
           </Route>
         </Route>
 
-        {/* <Route path="*"/> */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );
